@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/assets/stylesheet.css">
+    <script type="text/javascript">
+        function showAndroidToast() {
+            const token = document.getElementById('token').value
+            Android.showToast(token);
+        }
+    </script>
+
+    <script type="text/javascript">
+        function handleClick(){
+            const token = document.getElementById('token').value
+            window.location.href = "tr://redirect?token="+token;
+        }
+    </script>
+
+</head>
+
+<body>
+<p>Enter token in input and select the way to transfer it</p>
+<p><input type="text" id="token"/></p>
+<input type="button" value="JS Bridge hello" onClick="showAndroidToast()" />
+<a href="#" onclick="handleClick()">redirect with token</a>
+
+</body>
+</html>
