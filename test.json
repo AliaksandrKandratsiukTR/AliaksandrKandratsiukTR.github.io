@@ -1,0 +1,583 @@
+{
+  "editions": [
+    {
+      "advert_zone_prefix": "/4735792/touch.rn.jp.reuters",
+      "primary_language": "ja",
+      "config_params": [
+        {
+          "key": "quote_page_url",
+          "revision": 1529443130.92505,
+          "is_default": 0,
+          "value": "tr-news://tabbar/markets/watchlist/quote/ric:"
+        }
+      ],
+      "nodes": [
+        {
+          "config_params": [],
+          "description": "",
+          "name": "JP App Root",
+          "id": "hier:/rapp/jp",
+          "advert_info": {
+            "advert_params": [],
+            "advert_zone": "/wiredefault"
+          },
+          "english_name": "JP App Root",
+          "node_action": {
+            "url": "https://jp.reuters.com",
+            "type": "root",
+            "action_param": null,
+            "api_path": "/feed/rapp/jp"
+          },
+          "is_hidden": false,
+          "nodes": [
+            {
+              "name": "tabbar",
+              "id": "hier:/rapp/jp/tabbar",
+              "description": "",
+              "config_params": [],
+              "node_action": {
+                "type": "internal",
+                "url": "https://jp.reuters.com/tabbar",
+                "api_path": "/feed/rapp/jp/tabbar",
+                "action_param": "/tabbar"
+              },
+              "english_name": "tabbar",
+              "advert_info": {
+                "advert_zone": "/wiredefault",
+                "advert_params": []
+              },
+              "is_hidden": false,
+              "nodes": [
+                {
+                  "revision": 1539274869.38057,
+                  "keyword": "feeds",
+                  "is_hidden": false,
+                  "nodes": [
+                    {
+                      "english_name": "App Retirement",
+                      "advert_info": {
+                        "advert_zone": "/world/home",
+                        "advert_params": []
+                      },
+                      "revision": 1532598747.34988,
+                      "node_action": {
+                        "api_path": "/feed/rapp/jp/tabbar/feeds/appretirement",
+                        "action_param": null,
+                        "url": "https://jp.reuters.com/tabbar/feeds/world",
+                        "type": "wirefeed"
+                      },
+                      "keyword": "world",
+                      "config_params": [
+                        {
+                          "revision": 1529443131.23831,
+                          "key": "channel_preselect",
+                          "value": "true",
+                          "is_default": 0
+                        },
+                        {
+                          "revision": 1529443131.23831,
+                          "key": "channel_thumbcolor",
+                          "is_default": 0,
+                          "value": "27183F"
+                        },
+                        {
+                          "revision": 1529443131.23831,
+                          "key": "channel_thumbnail",
+                          "value": "https://helado.prod.reuters.tv/static/rapp/channel_thumbs/world00-27183F.jpg",
+                          "is_default": 0
+                        },
+                        {
+                          "value": "world|f10e",
+                          "is_default": 0,
+                          "revision": 1529443131.23831,
+                          "key": "feeddings_icon"
+                        }
+                      ],
+                      "name": "ロイターアプリ",
+                      "id": "chan:",
+                      "description": "",
+                      "is_hidden": false
+                    }
+                  ],
+                  "english_name": "Feeds",
+                  "advert_info": {
+                    "advert_zone": "/wiredefault",
+                    "advert_params": []
+                  },
+                  "node_action": {
+                    "api_path": "/feed/rapp/jp/tabbar/feeds",
+                    "action_param": "/tabbar/feeds",
+                    "type": "internal",
+                    "url": "https://jp.reuters.com/tabbar/feeds"
+                  },
+                  "config_params": [],
+                  "id": "hier:/rapp/jp/tabbar/feeds",
+                  "name": "フィード",
+                  "description": ""
+                },
+                {
+                  "nodes": [
+                    {
+                      "config_params": [
+                        {
+                          "revision": 1529443131.08778,
+                          "key": "watchlist_default_rics",
+                          "is_default": 0,
+                          "value": ".N225|.TOPX|.JSD|8411.T|9501.T|8306.T"
+                        }
+                      ],
+                      "is_hidden": false,
+                      "description": "",
+                      "id": "hier:/rapp/jp/tabbar/markets/watchlist",
+                      "name": "フォロー銘柄",
+                      "revision": 1532443974.78199,
+                      "advert_info": {
+                        "advert_zone": "/markets/watchlist",
+                        "advert_params": []
+                      },
+                      "english_name": "Watchlist",
+                      "keyword": "watchlist",
+                      "node_action": {
+                        "api_path": "/feed/rapp/jp/tabbar/markets/watchlist",
+                        "action_param": "/tabbar/markets/watchlist",
+                        "url": "https://jp.reuters.com/tabbar/markets/watchlist",
+                        "type": "internal"
+                      }
+                    },
+                    {
+                      "english_name": "Stocks",
+                      "advert_info": {
+                        "advert_params": [],
+                        "advert_zone": "/markets/stocks"
+                      },
+                      "revision": 1529443131.08778,
+                      "keyword": "stocks",
+                      "node_action": {
+                        "action_param": "/tabbar/markets/stocks",
+                        "api_path": "/feed/rapp/jp/tabbar/markets/stocks",
+                        "type": "internal",
+                        "url": "https://jp.reuters.com/tabbar/markets/stocks"
+                      },
+                      "config_params": [],
+                      "name": "株式",
+                      "id": "hier:/rapp/jp/tabbar/markets/stocks",
+                      "description": "",
+                      "is_hidden": false
+                    },
+                    {
+                      "english_name": "Currencies",
+                      "advert_info": {
+                        "advert_zone": "/markets/currencies",
+                        "advert_params": []
+                      },
+                      "revision": 1529443131.08778,
+                      "keyword": "currencies",
+                      "node_action": {
+                        "action_param": "/tabbar/markets/currencies",
+                        "api_path": "/feed/rapp/jp/tabbar/markets/currencies",
+                        "url": "https://jp.reuters.com/tabbar/markets/currencies",
+                        "type": "internal"
+                      },
+                      "config_params": [],
+                      "name": "外国為替",
+                      "id": "hier:/rapp/jp/tabbar/markets/currencies",
+                      "description": "",
+                      "is_hidden": false
+                    },
+                    {
+                      "keyword": "commodities",
+                      "node_action": {
+                        "api_path": "/feed/rapp/jp/tabbar/markets/commodities",
+                        "action_param": "/tabbar/markets/commodities",
+                        "type": "internal",
+                        "url": "https://jp.reuters.com/tabbar/markets/commodities"
+                      },
+                      "revision": 1529443131.08778,
+                      "advert_info": {
+                        "advert_params": [],
+                        "advert_zone": "/markets/commodities"
+                      },
+                      "english_name": "Commodities",
+                      "is_hidden": false,
+                      "description": "",
+                      "id": "hier:/rapp/jp/tabbar/markets/commodities",
+                      "name": "商品先物",
+                      "config_params": []
+                    }
+                  ],
+                  "is_hidden": false,
+                  "revision": 1539274869.38057,
+                  "keyword": "markets",
+                  "config_params": [],
+                  "name": "マーケット",
+                  "id": "hier:/rapp/jp/tabbar/markets",
+                  "description": "",
+                  "english_name": "Markets",
+                  "advert_info": {
+                    "advert_params": [],
+                    "advert_zone": "/wiredefault"
+                  },
+                  "node_action": {
+                    "type": "internal",
+                    "url": "https://jp.reuters.com/tabbar/markets",
+                    "action_param": "/tabbar/markets",
+                    "api_path": "/feed/rapp/jp/tabbar/markets"
+                  }
+                },
+                {
+                  "node_action": {
+                    "type": "internal",
+                    "url": "https://jp.reuters.com/tabbar/search",
+                    "action_param": "/tabbar/search",
+                    "api_path": "/feed/rapp/jp/tabbar/search"
+                  },
+                  "english_name": "Search",
+                  "advert_info": {
+                    "advert_params": [],
+                    "advert_zone": "/wiredefault"
+                  },
+                  "id": "hier:/rapp/jp/tabbar/search",
+                  "name": "検索",
+                  "description": "",
+                  "config_params": [],
+                  "keyword": "search",
+                  "revision": 1539274869.38057,
+                  "nodes": [
+                    {
+                      "keyword": "news",
+                      "node_action": {
+                        "api_path": "/feed/rapp/jp/tabbar/search/news",
+                        "action_param": "/tabbar/search/news",
+                        "url": "https://jp.reuters.com/tabbar/search/news",
+                        "type": "internal"
+                      },
+                      "advert_info": {
+                        "advert_zone": "/search",
+                        "advert_params": []
+                      },
+                      "revision": 1529443131.14248,
+                      "english_name": "News",
+                      "description": "",
+                      "is_hidden": false,
+                      "name": "ニュース",
+                      "id": "hier:/rapp/jp/tabbar/search/news",
+                      "config_params": []
+                    },
+                    {
+                      "config_params": [
+                        {
+                          "revision": 1529443131.14248,
+                          "key": "search_corpus",
+                          "value": "feeds",
+                          "is_default": 0
+                        }
+                      ],
+                      "name": "フィード",
+                      "id": "hier:/rapp/jp/tabbar/search/feeds",
+                      "description": "",
+                      "is_hidden": false,
+                      "english_name": "Feeds",
+                      "advert_info": {
+                        "advert_params": [],
+                        "advert_zone": "/search/feeds"
+                      },
+                      "revision": 1531344776.34063,
+                      "keyword": "feeds",
+                      "node_action": {
+                        "url": "https://jp.reuters.com/tabbar/search/feeds",
+                        "type": "internal",
+                        "action_param": "/tabbar/search/feeds",
+                        "api_path": "/feed/rapp/jp/tabbar/search/feeds"
+                      }
+                    },
+                    {
+                      "config_params": [
+                        {
+                          "key": "search_corpus",
+                          "revision": 1529443131.14248,
+                          "value": "markets",
+                          "is_default": 0
+                        }
+                      ],
+                      "name": "マーケット",
+                      "id": "hier:/rapp/jp/tabbar/search/markets",
+                      "description": "",
+                      "is_hidden": false,
+                      "english_name": "Markets",
+                      "advert_info": {
+                        "advert_params": [],
+                        "advert_zone": "/search/markets"
+                      },
+                      "revision": 1529443131.14248,
+                      "keyword": "markets",
+                      "node_action": {
+                        "api_path": "/feed/rapp/jp/tabbar/search/markets",
+                        "action_param": "/tabbar/search/markets",
+                        "type": "internal",
+                        "url": "https://jp.reuters.com/tabbar/search/markets"
+                      }
+                    },
+                    {
+                      "advert_info": {
+                        "advert_zone": "/search/videos",
+                        "advert_params": []
+                      },
+                      "revision": 1529443131.14248,
+                      "english_name": "Videos",
+                      "keyword": "videos",
+                      "node_action": {
+                        "action_param": "/tabbar/search/videos",
+                        "api_path": "/feed/rapp/jp/tabbar/search/videos",
+                        "type": "internal",
+                        "url": "https://jp.reuters.com/tabbar/search/videos"
+                      },
+                      "config_params": [
+                        {
+                          "value": "videos",
+                          "is_default": 0,
+                          "key": "search_corpus",
+                          "revision": 1529443131.14248
+                        }
+                      ],
+                      "description": "",
+                      "is_hidden": false,
+                      "name": "ビデオ",
+                      "id": "hier:/rapp/jp/tabbar/search/videos"
+                    },
+                    {
+                      "config_params": [
+                        {
+                          "revision": 1529443131.14248,
+                          "key": "search_corpus",
+                          "value": "photos",
+                          "is_default": 0
+                        }
+                      ],
+                      "is_hidden": false,
+                      "description": "",
+                      "id": "hier:/rapp/jp/tabbar/search/pictures",
+                      "name": "写真",
+                      "revision": 1529443131.14248,
+                      "advert_info": {
+                        "advert_params": [],
+                        "advert_zone": "/search/photos"
+                      },
+                      "english_name": "Pictures",
+                      "keyword": "pictures",
+                      "node_action": {
+                        "api_path": "/feed/rapp/jp/tabbar/search/pictures",
+                        "action_param": "/tabbar/search/pictures",
+                        "type": "internal",
+                        "url": "https://jp.reuters.com/tabbar/search/pictures"
+                      }
+                    }
+                  ],
+                  "is_hidden": false
+                },
+                {
+                  "revision": 1539389282.14439,
+                  "advert_info": {
+                    "advert_zone": "/wiredefault",
+                    "advert_params": []
+                  },
+                  "english_name": "Profile",
+                  "node_action": {
+                    "type": "internal",
+                    "url": "https://jp.reuters.com/tabbar/profile",
+                    "action_param": "/tabbar/profile",
+                    "api_path": "/feed/rapp/jp/tabbar/profile"
+                  },
+                  "keyword": "profile",
+                  "config_params": [],
+                  "is_hidden": false,
+                  "description": "",
+                  "id": "hier:/rapp/jp/tabbar/profile",
+                  "name": "プロフィール"
+                }
+              ],
+              "keyword": "tabbar",
+              "revision": 1539389282.14439
+            },
+            {
+              "advert_info": {
+                "advert_params": [],
+                "advert_zone": "/wiredefault"
+              },
+              "revision": 1529443130.94294,
+              "english_name": "wirefeed",
+              "node_action": {
+                "url": "https://jp.reuters.com/wirefeed",
+                "type": "wirefeed",
+                "action_param": null,
+                "api_path": "/feed/rapp/jp/wirefeed"
+              },
+              "keyword": "wirefeed",
+              "config_params": [],
+              "description": "",
+              "is_hidden": true,
+              "name": "wirefeed",
+              "id": "hier:/rapp/jp/wirefeed"
+            },
+            {
+              "english_name": "article",
+              "revision": 1529443130.94294,
+              "advert_info": {
+                "advert_zone": "/wiredefault",
+                "advert_params": []
+              },
+              "keyword": "article",
+              "node_action": {
+                "action_param": null,
+                "api_path": "/feed/rapp/jp/article",
+                "type": "article",
+                "url": "https://jp.reuters.com/article"
+              },
+              "config_params": [],
+              "id": "hier:/rapp/jp/article",
+              "name": "article",
+              "is_hidden": true,
+              "description": ""
+            },
+            {
+              "english_name": "detail",
+              "advert_info": {
+                "advert_zone": "/wiredefault",
+                "advert_params": []
+              },
+              "revision": 1529443130.94294,
+              "node_action": {
+                "action_param": null,
+                "api_path": "/feed/rapp/jp/detail",
+                "type": "detail",
+                "url": "https://jp.reuters.com/detail"
+              },
+              "keyword": "detail",
+              "config_params": [],
+              "name": "detail",
+              "id": "hier:/rapp/jp/detail",
+              "description": "",
+              "is_hidden": true
+            },
+            {
+              "name": "entity",
+              "id": "hier:/rapp/jp/entity",
+              "description": "",
+              "is_hidden": true,
+              "config_params": [],
+              "keyword": "entity",
+              "node_action": {
+                "url": "https://jp.reuters.com/entity",
+                "type": "entity",
+                "action_param": null,
+                "api_path": "/feed/rapp/jp/entity"
+              },
+              "english_name": "entity",
+              "advert_info": {
+                "advert_params": [],
+                "advert_zone": "/wiredefault"
+              },
+              "revision": 1531438202.43929
+            },
+            {
+              "config_params": [],
+              "is_hidden": true,
+              "description": "",
+              "id": "hier:/rapp/jp/search",
+              "name": "search",
+              "revision": 1529443130.94294,
+              "advert_info": {
+                "advert_params": [],
+                "advert_zone": "/wiredefault"
+              },
+              "english_name": "search",
+              "node_action": {
+                "type": "search",
+                "url": "https://jp.reuters.com/search",
+                "api_path": "/feed/rapp/jp/search",
+                "action_param": null
+              },
+              "keyword": "search"
+            },
+            {
+              "config_params": [],
+              "description": "",
+              "is_hidden": true,
+              "name": "marketnews",
+              "id": "hier:/rapp/jp/marketnews",
+              "advert_info": {
+                "advert_zone": "/stocks/overview",
+                "advert_params": []
+              },
+              "revision": 1534960292.26167,
+              "english_name": "marketnews",
+              "node_action": {
+                "action_param": null,
+                "api_path": "/feed/rapp/jp/marketnews",
+                "type": "mktnews",
+                "url": "https://jp.reuters.com/marketnews"
+              },
+              "keyword": "marketnews"
+            },
+            {
+              "node_action": {
+                "api_path": "/feed/rapp/jp/collection",
+                "action_param": null,
+                "type": "collect",
+                "url": "https://jp.reuters.com/collection"
+              },
+              "keyword": "collection",
+              "advert_info": {
+                "advert_params": [],
+                "advert_zone": "/wiredefault"
+              },
+              "revision": 1529443130.94294,
+              "english_name": "collection",
+              "description": "",
+              "is_hidden": true,
+              "name": "collection",
+              "id": "hier:/rapp/jp/collection",
+              "config_params": []
+            }
+          ],
+          "revision": 1539389282.14439,
+          "keyword": ""
+        }
+      ],
+      "name": "日本",
+      "revision": 1539389282.14439,
+      "english_name": "Japan",
+      "emoji": "🇯🇵",
+      "keyword": "jp1"
+    }
+  ],
+  "name": "Reuters News Apps v1",
+  "code": 200,
+  "keyword": "rapp",
+  "config_params": [
+    {
+      "revision": 1617896962.44444,
+      "key": "rcom_article_js_ios",
+      "value": "https://helado.prod.reuters.tv/static/rapp/article_ui_assets/4_4-bundle/mobile.bundle.js",
+      "is_default": 0
+    },
+    {
+      "revision": 1617896962.44444,
+      "key": "rcom_article_js_android",
+      "is_default": 0,
+      "value": "https://helado.prod.reuters.tv/static/rapp/article_ui_assets/4_4-bundle/mobile.bundle.js"
+    },
+    {
+      "revision": 1617896962.44444,
+      "key": "rcom_article_css_ios",
+      "is_default": 0,
+      "value": "https://helado.prod.reuters.tv/static/rapp/article_ui_assets/4_4-bundle/mobile.bundle.css"
+    },
+    {
+      "key": "rcom_article_css_android",
+      "revision": 1617896962.44444,
+      "value": "https://helado.prod.reuters.tv/static/rapp/article_ui_assets/4_4-bundle/mobile.bundle.css",
+      "is_default": 0
+    }
+  ],
+  "revision": 1617896962.44444
+}
