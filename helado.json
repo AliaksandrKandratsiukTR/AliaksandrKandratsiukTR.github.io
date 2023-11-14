@@ -1,0 +1,621 @@
+{
+	"editions": [{
+		"keyword": "int",
+		"emoji": "🇺🇸",
+		"english_name": "International",
+		"revision": 1698738512630,
+		"name": "International",
+		"nodes": [{
+			"is_hidden": false,
+			"nodes": [{
+				"is_hidden": false,
+				"nodes": [{
+					"id": "hier:/rapp/us/tabbar/feeds",
+					"name": "Feeds",
+					"english_name": "Feeds",
+					"keyword": "feeds",
+					"advert_info": {
+						"advert_params": [],
+						"advert_zone": "/wiredefault"
+					},
+					"node_action": {
+						"action_param": "/tabbar/feeds",
+						"api_path": "/feed/rapp/us/tabbar/feeds",
+						"url": "https://www.reuters.com/tabbar/feeds",
+						"type": "internal"
+					},
+					"config_params": [],
+					"description": "",
+					"revision": 1585245791.86995,
+					"is_hidden": false,
+					"nodes": [{
+						"id": "hier:/rapp/us/tabbar/home",
+						"name": "Home",
+						"english_name": "Home",
+						"keyword": "home",
+						"advert_info": {
+							"advert_params": [],
+							"advert_zone": "/home"
+						},
+						"node_action": {
+							"url": "https://www.reuters.com/tabbar/feeds/home",
+							"type": "internal",
+							"api_path": "/home/",
+							"action_param": "/tabbar/feeds/home",
+							"api_type": "arc"
+						},
+						"config_params": [{
+							"revision": 1529443131.03767,
+							"key": "carousel_control",
+							"value": "fixed_required",
+							"is_default": 0
+						}, {
+							"key": "channel_preselect",
+							"revision": 1529443131.03767,
+							"value": "true",
+							"is_default": 0
+						}, {
+							"key": "feeddings_icon",
+							"revision": 1529443131.03767,
+							"is_default": 0,
+							"value": "home|f12f"
+						}],
+						"description": "",
+						"revision": 1585245791.86995,
+						"is_hidden": false,
+						"nodes": [{
+							"id": "chan:7xx0hfb3",
+							"name": "Top News",
+							"english_name": "Top News",
+							"keyword": "topnews",
+							"advert_info": {
+								"advert_zone": "/world/us/article",
+								"advert_params": []
+							},
+							"node_action": {
+								"url": "https://www.reuters.com/tabbar/feeds/home/topnews",
+								"type": "wirefeed",
+								"api_path": "/section/home",
+								"action_param": null,
+								"api_type": "arc"
+							},
+							"config_params": [{
+								"value": "hashtag|f103",
+								"is_default": 1,
+								"revision": 1529443130.90928,
+								"key": "feeddings_icon"
+							}],
+							"description": "",
+							"revision": 1529443131.20643,
+							"is_hidden": false
+						}]
+					}]
+				}, {
+					"config_params": [{
+						"key": "feeddings_icon",
+						"revision": 1529443130.99327,
+						"is_default": 0,
+						"value": "reuters-now|f136"
+					}],
+					"description": "",
+					"is_hidden": false,
+					"name": "Reuters TV",
+					"id": "hier:/rapp/us/tabbar/reutersnow",
+					"advert_info": {
+						"advert_params": [],
+						"advert_zone": "/wiredefault"
+					},
+					"revision": 1575660187.17993,
+					"english_name": "Reuters TV",
+					"keyword": "reutersnow",
+					"node_action": {
+						"action_param": "/tabbar/reutersnow",
+						"api_path": "/feed/rapp/us/tabbar/reutersnow",
+						"type": "internal",
+						"url": "https://www.reuters.com/tabbar/reutersnow"
+					}
+				}, {
+					"nodes": [{
+						"revision": 1529443131.08778,
+						"advert_info": {
+							"advert_zone": "/markets/watchlist",
+							"advert_params": []
+						},
+						"english_name": "Watchlist",
+						"node_action": {
+							"api_path": "/feed/rapp/us/tabbar/markets/watchlist",
+							"action_param": "/tabbar/markets/watchlist",
+							"type": "internal",
+							"url": "https://www.reuters.com/tabbar/markets/watchlist"
+						},
+						"keyword": "watchlist",
+						"config_params": [{
+							"revision": 1529443131.08778,
+							"key": "watchlist_default_rics",
+							"is_default": 0,
+							"value": ".SPX|.IXIC|.DJI|AAPL.OQ|GE.N|AMZN.OQ"
+						}],
+						"is_hidden": true,
+						"description": "",
+						"id": "hier:/rapp/us/tabbar/markets/watchlist",
+						"name": "Watchlist"
+					}, {
+						"advert_info": {
+							"advert_zone": "/markets/stocks",
+							"advert_params": []
+						},
+						"revision": 1529443131.08778,
+						"english_name": "Stocks",
+						"node_action": {
+							"type": "internal",
+							"url": "https://www.reuters.com/tabbar/markets/stocks",
+							"api_path": "/feed/rapp/us/tabbar/markets/stocks",
+							"action_param": "/tabbar/markets/stocks"
+						},
+						"keyword": "stocks",
+						"config_params": [],
+						"description": "",
+						"is_hidden": true,
+						"name": "Stocks",
+						"id": "hier:/rapp/us/tabbar/markets/stocks"
+					}, {
+						"english_name": "Bonds",
+						"revision": 1529443131.08778,
+						"advert_info": {
+							"advert_params": [],
+							"advert_zone": "/markets/bonds"
+						},
+						"node_action": {
+							"api_path": "/feed/rapp/us/tabbar/markets/bonds",
+							"action_param": "/tabbar/markets/bonds",
+							"url": "https://www.reuters.com/tabbar/markets/bonds",
+							"type": "internal"
+						},
+						"keyword": "bonds",
+						"config_params": [],
+						"id": "hier:/rapp/us/tabbar/markets/bonds",
+						"name": "Bonds",
+						"is_hidden": true,
+						"description": ""
+					}, {
+						"description": "",
+						"is_hidden": true,
+						"name": "Currencies",
+						"id": "hier:/rapp/us/tabbar/markets/currencies",
+						"config_params": [],
+						"node_action": {
+							"type": "internal",
+							"url": "https://www.reuters.com/tabbar/markets/currencies",
+							"api_path": "/feed/rapp/us/tabbar/markets/currencies",
+							"action_param": "/tabbar/markets/currencies"
+						},
+						"keyword": "currencies",
+						"advert_info": {
+							"advert_params": [],
+							"advert_zone": "/markets/currencies"
+						},
+						"revision": 1529443131.08778,
+						"english_name": "Currencies"
+					}, {
+						"keyword": "commodities",
+						"node_action": {
+							"api_path": "/feed/rapp/us/tabbar/markets/commodities",
+							"action_param": "/tabbar/markets/commodities",
+							"type": "internal",
+							"url": "https://www.reuters.com/tabbar/markets/commodities"
+						},
+						"advert_info": {
+							"advert_params": [],
+							"advert_zone": "/markets/commodities"
+						},
+						"revision": 1529443131.08778,
+						"english_name": "Commodities",
+						"description": "",
+						"is_hidden": true,
+						"name": "Commodities",
+						"id": "hier:/rapp/us/tabbar/markets/commodities",
+						"config_params": []
+					}],
+					"is_hidden": true,
+					"revision": 1532723364.1792,
+					"keyword": "markets",
+					"config_params": [],
+					"name": "Markets",
+					"id": "hier:/rapp/us/tabbar/markets",
+					"description": "",
+					"english_name": "Markets",
+					"advert_info": {
+						"advert_zone": "/wiredefault",
+						"advert_params": []
+					},
+					"node_action": {
+						"api_path": "/feed/rapp/us/tabbar/markets",
+						"action_param": "/tabbar/markets",
+						"url": "https://www.reuters.com/tabbar/markets",
+						"type": "internal"
+					}
+				}, {
+					"id": "hier:/rapp/us/tabbar/search",
+					"name": "Search",
+					"english_name": "Search",
+					"advert_info": {
+						"advert_zone": "/wiredefault",
+						"advert_params": []
+					},
+					"node_action": {
+						"type": "internal",
+						"url": "https://www.reuters.com/tabbar/search",
+						"api_path": "/feed/rapp/us/tabbar/search",
+						"action_param": "/tabbar/search"
+					},
+					"config_params": [],
+					"description": "",
+					"revision": 1532723364.1792,
+					"keyword": "search",
+					"nodes": [{
+						"id": "hier:/rapp/us/tabbar/search/news",
+						"name": "News",
+						"english_name": "News",
+						"keyword": "news",
+						"description": "",
+						"advert_info": {
+							"advert_params": [],
+							"advert_zone": "/search"
+						},
+						"node_action": {
+							"type": "internal",
+							"action_param": "/tabbar/search/news",
+							"api_path": "/search/",
+							"api_type": "arc",
+							"url": "https://www.reuters.com/tabbar/search/news"
+						},
+						"config_params": [],
+						"revision": 1529443131.14248,
+						"is_hidden": false
+					}, {
+						"id": "hier:/rapp/us/tabbar/search/markets",
+						"name": "Markets",
+						"config_params": [{
+							"value": "markets",
+							"is_default": 0,
+							"revision": 1529443131.14248,
+							"key": "search_corpus"
+						}],
+						"description": "",
+						"is_hidden": false,
+						"english_name": "Markets",
+						"advert_info": {
+							"advert_zone": "/search/markets",
+							"advert_params": []
+						},
+						"revision": 1529443131.14248,
+						"keyword": "markets",
+						"node_action": {
+							"api_path": "/feed/rapp/us/tabbar/search/markets",
+							"action_param": "/tabbar/search/markets",
+							"url": "https://www.reuters.com/tabbar/search/markets",
+							"type": "internal",
+							"api_type": "wire"
+						}
+					}, {
+						"keyword": "videos",
+						"node_action": {
+							"api_path": "/feed/rapp/us/tabbar/search/videos",
+							"action_param": "/tabbar/search/videos",
+							"url": "https://www.reuters.com/tabbar/search/videos",
+							"type": "internal",
+							"api_type": "wire"
+						},
+						"revision": 1529443131.14248,
+						"advert_info": {
+							"advert_zone": "/search/videos",
+							"advert_params": []
+						},
+						"english_name": "Videos",
+						"is_hidden": false,
+						"description": "",
+						"id": "hier:/rapp/us/tabbar/search/videos",
+						"name": "Videos",
+						"config_params": [{
+							"key": "search_corpus",
+							"revision": 1529443131.14248,
+							"is_default": 0,
+							"value": "videos"
+						}]
+					}, {
+						"config_params": [{
+							"revision": 1529443131.14248,
+							"key": "search_corpus",
+							"value": "photos",
+							"is_default": 0
+						}],
+						"name": "Pictures",
+						"id": "hier:/rapp/us/tabbar/search/pictures",
+						"description": "",
+						"is_hidden": false,
+						"english_name": "Pictures",
+						"advert_info": {
+							"advert_zone": "/search/photos",
+							"advert_params": []
+						},
+						"revision": 1529443131.14248,
+						"keyword": "pictures",
+						"node_action": {
+							"api_path": "/feed/rapp/us/tabbar/search/pictures",
+							"action_param": "/tabbar/search/pictures",
+							"type": "internal",
+							"url": "https://www.reuters.com/tabbar/search/pictures",
+							"api_type": "wire"
+						}
+					}],
+					"is_hidden": false
+				}, {
+					"config_params": [],
+					"is_hidden": false,
+					"description": "",
+					"id": "hier:/rapp/us/tabbar/profile",
+					"name": "Profile",
+					"revision": 1532723364.1792,
+					"advert_info": {
+						"advert_params": [],
+						"advert_zone": "/wiredefault"
+					},
+					"english_name": "Profile",
+					"node_action": {
+						"api_path": "/feed/rapp/us/tabbar/profile",
+						"action_param": "/tabbar/profile",
+						"url": "https://www.reuters.com/tabbar/profile",
+						"type": "internal"
+					},
+					"keyword": "profile"
+				}],
+				"revision": 1585245791.86995,
+				"keyword": "tabbar",
+				"config_params": [],
+				"name": "tabbar",
+				"id": "hier:/rapp/us/tabbar",
+				"description": "",
+				"english_name": "tabbar",
+				"advert_info": {
+					"advert_zone": "/wiredefault",
+					"advert_params": []
+				},
+				"node_action": {
+					"url": "https://www.reuters.com/tabbar",
+					"type": "internal",
+					"action_param": "/tabbar",
+					"api_path": "/feed/rapp/us/tabbar"
+				}
+			}, {
+				"keyword": "wirefeed",
+				"node_action": {
+					"url": "https://www.reuters.com/wirefeed",
+					"type": "wirefeed",
+					"action_param": null,
+					"api_path": "/feed/rapp/us/wirefeed"
+				},
+				"revision": 1529443130.94294,
+				"advert_info": {
+					"advert_params": [],
+					"advert_zone": "/wiredefault"
+				},
+				"english_name": "wirefeed",
+				"is_hidden": true,
+				"description": "",
+				"id": "hier:/rapp/us/wirefeed",
+				"name": "wirefeed",
+				"config_params": []
+			}, {
+				"english_name": "article",
+				"advert_info": {
+					"advert_params": [],
+					"advert_zone": "/wiredefault"
+				},
+				"revision": 1529443130.94294,
+				"node_action": {
+					"type": "article",
+					"url": "https://www.reuters.com/article",
+					"api_path": "/feed/rapp/us/article",
+					"action_param": null
+				},
+				"keyword": "article",
+				"config_params": [],
+				"name": "article",
+				"id": "hier:/rapp/us/article",
+				"description": "",
+				"is_hidden": true
+			}, {
+				"advert_info": {
+					"advert_zone": "/wiredefault",
+					"advert_params": []
+				},
+				"revision": 1529443130.94294,
+				"english_name": "detail",
+				"node_action": {
+					"type": "detail",
+					"url": "https://www.reuters.com/detail",
+					"action_param": null,
+					"api_path": "/feed/rapp/us/detail"
+				},
+				"keyword": "detail",
+				"config_params": [],
+				"description": "",
+				"is_hidden": true,
+				"name": "detail",
+				"id": "hier:/rapp/us/detail"
+			}, {
+				"keyword": "entity",
+				"node_action": {
+					"url": "https://www.reuters.com/entity",
+					"type": "entity",
+					"api_path": "/feed/rapp/us/entity",
+					"action_param": null
+				},
+				"english_name": "entity",
+				"revision": 1531438202.43929,
+				"advert_info": {
+					"advert_zone": "/wiredefault",
+					"advert_params": []
+				},
+				"id": "hier:/rapp/us/entity",
+				"name": "entity",
+				"is_hidden": true,
+				"description": "",
+				"config_params": []
+			}, {
+				"keyword": "search",
+				"node_action": {
+					"api_path": "/feed/rapp/us/search",
+					"action_param": null,
+					"url": "https://www.reuters.com/search",
+					"type": "search"
+				},
+				"advert_info": {
+					"advert_zone": "/wiredefault",
+					"advert_params": []
+				},
+				"revision": 1529443130.94294,
+				"english_name": "search",
+				"description": "",
+				"is_hidden": true,
+				"name": "search",
+				"id": "hier:/rapp/us/search",
+				"config_params": []
+			}, {
+				"english_name": "marketnews",
+				"advert_info": {
+					"advert_zone": "/markets/stocks/quotes",
+					"advert_params": []
+				},
+				"revision": 1534876646.07553,
+				"keyword": "marketnews",
+				"node_action": {
+					"api_path": "/feed/rapp/us/marketnews",
+					"action_param": null,
+					"type": "mktnews",
+					"url": "https://www.reuters.com/marketnews"
+				},
+				"config_params": [],
+				"name": "marketnews",
+				"id": "hier:/rapp/us/marketnews",
+				"description": "",
+				"is_hidden": true
+			}, {
+				"keyword": "collection",
+				"node_action": {
+					"api_path": "/feed/rapp/us/collection",
+					"action_param": null,
+					"type": "collect",
+					"url": "https://www.reuters.com/collection"
+				},
+				"english_name": "collection",
+				"revision": 1529443130.94294,
+				"advert_info": {
+					"advert_params": [],
+					"advert_zone": "/wiredefault"
+				},
+				"id": "hier:/rapp/us/collection",
+				"name": "collection",
+				"is_hidden": true,
+				"description": "",
+				"config_params": []
+			}],
+			"revision": 1585245791.86995,
+			"keyword": "",
+			"config_params": [],
+			"description": "",
+			"id": "hier:/rapp/us",
+			"name": "US App Root",
+			"advert_info": {
+				"advert_zone": "/wiredefault",
+				"advert_params": []
+			},
+			"english_name": "US App Root",
+			"node_action": {
+				"url": "https://www.reuters.com",
+				"type": "root",
+				"api_path": "/feed/rapp/us",
+				"action_param": null
+			}
+		}],
+		"config_params": [{
+			"revision": 1554219176.02222,
+			"key": "dianomi_template_script",
+			"is_default": 0,
+			"value": "<script type=\"text/javascript\" id=\"dianomi_context_script\" src=\"https://www.dianomi.com/js/contextfeed.js\"></script><div class=\"dianomi_context\" data-dianomi-context-id=\"11\" style=\"height:1485px; overflow:hidden;\"></div>"
+		}, {
+			"revision": 1529443130.92505,
+			"key": "quote_page_url",
+			"is_default": 0,
+			"value": "tr-news://tabbar/markets/watchlist/quote/ric:"
+		}],
+		"advert_zone_prefix": "/4735792/touch.rn.us.reuters",
+		"primary_language": "en"
+	}],
+	"name": "Reuters News Apps v1",
+	"code": 200,
+	"keyword": "rapp",
+	"config_params": [{
+		"revision": 1623138311094,
+		"key": "rcom_article_js_ios",
+		"is_default": 0,
+		"value": "https://helado.stage.reuters.tv/static/rapp/article_ui_assets/4_5-bundle/mobile.bundle.js"
+	}, {
+		"revision": 1623138311094,
+		"key": "rcom_article_js_android",
+		"is_default": 0,
+		"value": "https://helado.stage.reuters.tv/static/rapp/article_ui_assets/4_5-bundle/mobile.bundle.js"
+	}, {
+		"revision": 1623138311094,
+		"key": "rcom_article_css_ios",
+		"is_default": 0,
+		"value": "https://helado.stage.reuters.tv/static/rapp/article_ui_assets/4_5-bundle/mobile.bundle.css"
+	}, {
+		"key": "rcom_article_css_android",
+		"revision": 1623138311094,
+		"is_default": 0,
+		"value": "https://helado.stage.reuters.tv/static/rapp/article_ui_assets/4_5-bundle/mobile.bundle.css"
+	}],
+	"interstitial_ads": [],
+	"force_update_config": [{
+		"key": "force_android_app_version",
+		"value": "5.0"
+	}, {
+		"key": "min_android_apilevel_version",
+		"value": 28
+	}, {
+		"key": "force_ios_app_version",
+		"value": "4.11"
+	}],
+	"revision": 1699951127875,
+	"paywall_config": {
+		"subscription_countries": ["US", "GB", "DE", "CA", "CH", "FR", "PL", "GE"],
+		"android_paywall_disabled": false
+	},
+	"notification_config": [{
+		"key": "application_breakingnews_alert",
+		"name": "Breaking News",
+		"description": "The latest updates on major events",
+		"defaultValue": true
+	}, {
+		"key": "application_editorspick_alert",
+		"name": "Editor's pick",
+		"description": "Stories selected for you",
+		"defaultValue": true
+	}, {
+		"key": "application_podcasts_alert",
+		"name": "Podcasts",
+		"description": "Keep up with all the latest podcasts",
+		"defaultValue": true
+	}],
+	"datadog_config": [{
+		"key": "rumSessionsSamplingRate",
+		"value": "100.0"
+	}, {
+		"key": "tracingSamplingRate",
+		"value": "25.0"
+	}, {
+		"key": "firstPartyHosts",
+		"value": "reuters.com"
+	}]
+}
