@@ -282,7 +282,7 @@
 							"key": "search_corpus"
 						}],
 						"description": "",
-						"is_hidden": false,
+						"is_hidden": true,
 						"english_name": "Markets",
 						"advert_info": {
 							"advert_zone": "/search/markets",
