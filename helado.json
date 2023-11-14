@@ -223,7 +223,7 @@
 					"name": "Markets",
 					"id": "hier:/rapp/us/tabbar/markets",
 					"description": "",
-					"english_name": "Markets",
+					"english_name": "Markets_eng",
 					"advert_info": {
 						"advert_zone": "/wiredefault",
 						"advert_params": []
