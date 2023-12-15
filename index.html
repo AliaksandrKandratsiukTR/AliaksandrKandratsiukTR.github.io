@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!--    <script type="text/javascript">-->
     <!--        function showAndroidToast() {-->
     <!--            const token = document.getElementById('token').value-->
@@ -15,47 +15,77 @@
     <!--            window.location.href = "tr-news://redirect?token="+token;-->
     <!--        }-->
     <!--    </script>-->
-
+    <script type="text/javascript">
+        function addItem(title, url) {
+            let container = document.getElementById("container");
+            let oldText = container.innerHTML;
+            let newText = oldText + `<h2>${title}</h2><div class="url_container"><a href="${url}">url</a></div>`;
+            container.innerHTML = newText;
+        }
+    </script>
 </head>
 
 <body>
-<!--    <p>Enter <b>_token_</b> in input and select the way to transfer it to something</p>-->
-<!--    <p><input type="text" id="token"/></p>-->
-<!--    <input type="button" value="JS Bridge hello" onClick="showAndroidToast()" />-->
-<!--    <a href="#" onclick="handleClick()">redirect with token</a>-->
-<!--    <p>-->
-<!--        <a href = "https://www.reuters.com/verify-email/?email=qogofidi@labworld.org&nonce=P7QBKuq40pBbS4O8QItqaWloksOl5BOq7xgfUZRdk3jdSgT7">Verify email</a><br>-->
-<!--        <a href = "tr-news://registration/linkExpired?email=abdullah.ayman.elzayat@gmail.com">Tr-news registration</a>-->
-<!--    </p>-->
+    <!--    <p>Enter <b>_token_</b> in input and select the way to transfer it to something</p>-->
+    <!--    <p><input type="text" id="token"/></p>-->
+    <!--    <input type="button" value="JS Bridge hello" onClick="showAndroidToast()" />-->
+    <!--    <a href="#" onclick="handleClick()">redirect with token</a>-->
+    <!--    <p>-->
+    <!--        <a href = "https://www.reuters.com/verify-email/?email=qogofidi@labworld.org&nonce=P7QBKuq40pBbS4O8QItqaWloksOl5BOq7xgfUZRdk3jdSgT7">Verify email</a><br>-->
+    <!--        <a href = "tr-news://registration/linkExpired?email=abdullah.ayman.elzayat@gmail.com">Tr-news registration</a>-->
+    <!--    </p>-->
     <h2>Site:</h2>
-    <div class="url_container">
-        <a href="https://sandbox.reuters.com">https://sandbox.reuters.com</a>
-    </div>
-    <h2>Section:</h2>
-    <div class="url_container">
-        <a href="https://sandbox.reuters.com/business/energy/">https://sandbox.reuters.com/business/energy/</a>
-    </div>
-    <h2>Not valid section:</h2>
-    <div class="url_container">
-        <a href="https://sandbox.reuters.com/business/ey/">https://sandbox.reuters.com/business/ey/</a>
-    </div>
-    <h2>Article:</h2>
-    <div class="url_container">
-        <a href="https://sandbox.reuters.com/world/russias-putin-told-saudis-mbs-we-meet-moscow-next-time-2023-12-07/">https://sandbox.reuters.com/world/russias-putin-told-saudis-mbs-we-meet-moscow-next-time-2023-12-07/</a>
-    </div>
-    <h2>Not valid article:</h2>
-    <div class="url_container">
-        <a href="https://sandbox.reuters.com/world/russias-putin/">https://sandbox.reuters.com/world/russias-putin/</a>
-    </div>
+    <div id="root">
+        <form>
+            <div class="form-group">
+                <label for="">Title:</label>
+                <input id="title" class="form-control" type="text" placeholder="Link tittle">
 
-    <h2>Home:</h2>
-    <div class="url_container">
-        <a href="https://sandbox.reuters.com/">https://sandbox.reuters.com/</a>
-    </div>
+                <label for="">Url:</label>
+                <input id="url" class="form-control" type="text" placeholder="Link url">
+            </div>
 
-    <h2>World:</h2>
-    <div class="url_container">
-        <a href="https://sandbox.reuters.com/world/">https://sandbox.reuters.com/world/</a>
+            <div class="form-group text-center">
+                <button id="my_button" class="btn btn-outline-success btn-lg" type="button">
+                    Add item
+                </button>
+            </div>
+        </form>
+
+        <div class="url_container">
+            <a href="https://sandbox.reuters.com">https://sandbox.reuters.com</a>
+        </div>
+        <h2>Section:</h2>
+        <div class="url_container">
+            <a href="https://sandbox.reuters.com/business/energy/">https://sandbox.reuters.com/business/energy/</a>
+        </div>
+        <h2>Not valid section:</h2>
+        <div class="url_container">
+            <a href="https://sandbox.reuters.com/business/ey/">https://sandbox.reuters.com/business/ey/</a>
+        </div>
+        <h2>Article:</h2>
+        <div class="url_container">
+            <a
+                href="https://sandbox.reuters.com/world/russias-putin-told-saudis-mbs-we-meet-moscow-next-time-2023-12-07/">https://sandbox.reuters.com/world/russias-putin-told-saudis-mbs-we-meet-moscow-next-time-2023-12-07/</a>
+        </div>
+        <h2>Not valid article:</h2>
+        <div class="url_container">
+            <a
+                href="https://sandbox.reuters.com/world/russias-putin/">https://sandbox.reuters.com/world/russias-putin/</a>
+        </div>
+
+        <div id="container"/>
     </div>
 </body>
+
+<script type="text/javascript">
+    document.getElementById("my_button").addEventListener('click', function () {
+        var title = document.getElementById("title").value;
+        var url = document.getElementById("url").value;
+        addItem(title, url);
+        title.value = "";
+        url.value = "";
+    });
+</script>
+
 </html>
