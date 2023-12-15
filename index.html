@@ -19,7 +19,7 @@
         function addItem(title, url) {
             let container = document.getElementById("container");
             let oldText = container.innerHTML;
-            let newText = oldText + `<h2>${title}</h2><div class="url_container"><a href="${url}">url</a></div>`;
+            let newText = oldText + `<h2>${title}</h2><div class="url_container"><a href="${url}">${url}</a></div>`;
             container.innerHTML = newText;
         }
     </script>
